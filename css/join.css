@@ -68,6 +68,17 @@ input.pw{
     font-style: inherit;
     color:black;
 }
+.back{
+    border: 0;
+    outline: 0;
+    background-color: white;
+    margin-right: 200px;
+}
+.login_start{
+    border: 0;
+    outline: 0;
+    background-color: white;
+}
 input:focus {outline: none;}
 @media screen and (max-width: 768px) {
    .navbar{
