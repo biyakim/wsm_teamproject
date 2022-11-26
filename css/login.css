@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    font-family: 'Source Sans Pro';
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 8px 12px;
+}
+.navbar_logo{
+    font-size: 24px;
+    color: white;
+}
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.navbar_menu li{
+    padding: 8px 12px;
+}
+.navbar_menu li:hover{
+    background-color:darksalmon;
+    border-radius: 4px;
+}
+.bar{
+    display: none;
+    margin-left: 400px;
+    width: 50px;
+    height: 50px;
+    right: 32;
+    
+}
+input.id{
+    width: 300px;
+    height: 50px;
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    border-bottom-width:1;
+}
+input.pw{
+    width: 300px;
+    height: 50px;
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    border-bottom-width:1;
+}
+.gwating{
+    text-align: center;
+    font-size: 30px;
+    font-style: inherit;
+    color:black;
+}
+.login{
+    text-align : center;
+    padding: 100px 0;
+}
+input:focus {outline: none;}
+.login_start{
+    margin-top: 40px;
+    height: 40px;
+    width: 300px;
+    color: white;
+    background-color: black;
+}
+.join_membership{
+    color: black;
+    background-color: white;
+    border: 0;
+    outline: 0;
+}
+@media screen and (max-width: 768px) {
+   .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+   }
+   .navbar_menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+   }
+   .navbar_menu li{
+        width: 100%;
+        text-align: center;
+   }
+   .bar{
+        display: block;
+   }
+   .navbar_menu.avtive{
+        display: flex;
+   }
+   .text{
+        padding-right: 100px;
+   }
+
+}
+   
