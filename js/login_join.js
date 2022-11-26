@@ -6,7 +6,7 @@ function login(){
         alert("로그인을 할 수 없습니다")
     }
     else{
-        location.href = 'index.html';
+        location.href = 'login_index.html';
     }
 }
 function back(){
