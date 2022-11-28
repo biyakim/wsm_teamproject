@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\writing.css">
+    <title>글 쓰기</title>
+    <script src="js\writing.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar_logo">
+         <img class="bar" src="img\bar.png">
+          <img class="love_log" src="img\icon.png">
+        </div>
+ 
+        <ul class="navbar_menu">
+             <li><a href="login_index.html">홈</a></li>
+             <li><a href="mypage.html">마이 페이지</a></li>
+             <li><a href="index.html">로그아웃</a></li>
+        </ul>
+        
+   </nav>
+
+   <table class="writing" border="1" width=800>
+    <tr>
+        <td width=50>
+            <select id="countires", name="countires">
+            </select>
+        </td>
+        <td >
+            <input type="text" placeholder="제목을 입력하세요."
+            maxlength=20
+            style="width:100%" >
+        </td>
+    </tr>
+    <td width=50>
+        <select id="countires2", name="countires2">
+        </select>
+    </td>
+    <tr>
+        <td colspan="2" height=700 >
+            <textarea placeholder="내용을 입력하세요." style="width: 100%; height: 100%"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align=right>
+            <a href=""></a><input type="button" value="완료">
+        </td>
+    </tr>
+</table>
+    
+</body>
+</html>
