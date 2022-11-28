@@ -14,7 +14,7 @@ fetch('https://www.career.go.kr/cnet/openapi/getOpenApi?apiKey=922f4bc8842956d94
     return res.json(); 
 }).then(data => {
     let output = "";
-   data.forEach(country => {
+   Array.from(data).forEach(country => {
     output += `<options>${country.mClass}</options>`;
    })
 }).catch(err => {
