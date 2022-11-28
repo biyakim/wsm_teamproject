@@ -1,0 +1,38 @@
+.filter-container {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 90px;
+    align-items: center;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    column-gap: 16px; /*대학교와 select태그 사이의 간격*/
+}
+
+.filter-group-name {
+    font-size:x-large;
+}
+
+/*select 태그 커스텀*/
+.select-box {
+    background:url('/img/down-arrow.png') no-repeat 97% 50%/15px auto;
+}
+select { 
+    padding-left: 14px;
+    width: 250px;
+    height: 50px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance: none;
+    background: transparent;
+}
+select::-ms-expand{
+    display:none;/*for IE10,11*/
+}
