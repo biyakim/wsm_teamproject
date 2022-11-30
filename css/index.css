@@ -1,10 +1,13 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&family=Noto+Sans+KR:wght@300&display=swap');
+
 .filter-container {
     border: 1px solid black;
     border-radius: 4px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
     margin-top: 60px;
-    padding-left: 1.5rem;
+    padding-left: 9rem;
     display: flex;
     justify-content: space-between;
     height: 90px;
@@ -46,8 +49,68 @@ select::-ms-expand{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: 0.7s;
 }
 .search-btn:hover {
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(236, 236, 236);
     transition: 0.7s;
+}
+.post-container {
+    display: flex;
+    padding-top: 120px;
+    padding-left: 110px;
+    padding-right: 110px;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+.post-group {
+    border-radius: 4px;
+    height: 210px;
+    background-color:white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.post-detail {
+    display: flex;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.detail-item:nth-child(1) {
+    margin-left: 2rem;
+}
+.detail-item::after {
+    margin-left: 12px;
+    margin-right: 12px;
+    content: "ㅣ";
+    font-weight: lighter;
+}
+.detail-item:last-child:after {
+    content: "";
+}
+
+.detail-btn {
+    position: relative;
+    top: 4.5rem;
+    right: 1rem;
+}
+.bx-burst-hover:hover {
+    color: #347D51;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .filter-container {
+        margin-left: 128px;
+        margin-right: 128px;
+        padding-left: 1rem;
+    }
+    .post-container {
+        /* background-color: aqua; */
+        flex-wrap: wrap;
+        row-gap: 90px;
+        padding-left: 170px;
+        padding-right: 170px;
+    }
 }
