@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    padding-right: 0.75rem;
+
+}
+
+.nav-list {
+    color: white;
+    display: flex;
+    column-gap: 0.75rem;
+}
+
+.nav-loggo {
+    padding-left: 0.75rem;
+}
