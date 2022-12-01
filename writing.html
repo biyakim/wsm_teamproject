@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css\writing.css">
     <title>글 쓰기</title>
-    <script src="js\writing.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -19,7 +18,7 @@
              <li><a href="login_index.html">홈</a></li>
              <li><a href="mypage.html">마이 페이지</a></li>
              <li><a href="index.html">로그아웃</a></li>
-        </ul>
+            </ul>
         
    </nav>
 
@@ -28,7 +27,7 @@
         <div class="container">
         <td width=50>
             <select class="countires", name="countires">
-                <option></option>
+                <option>학과 선택</option>
             </select>
         </td>
         </div>
@@ -40,6 +39,7 @@
     </tr>
     <td width=50>
         <select id="countires2", name="countires2">
+            <option>대학교 선택</option>
         </select>
     </td>
     <tr>
@@ -53,6 +53,8 @@
         </td>
     </tr>
 </table>
-    
+
+<script src="js\writing.js" defer></script>
+<script src="js\school.js" defer></script>
 </body>
 </html>

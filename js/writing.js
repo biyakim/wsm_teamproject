@@ -1,5 +1,4 @@
 const link = `https://www.career.go.kr/cnet/openapi/getOpenApi?apiKey=922f4bc8842956d94e130993d069759b&svcType=api&svcCode=MAJOR&contentType=json&gubun=univ_list`;
-
 // 비동기로 호출하자
 fetch(link).then((response) => response.json()).then((json) => console.log(json));
 
@@ -31,18 +30,14 @@ getMenuByAPI(link)
 
 const show = (jsonString) => {
     let json = JSON.parse(jsonString);
-    let getJsonData = json["dataSearch"]["content"]
-    let title = []
-    let num = 0
-        //지역별
-    for (let i = 0; i < getJsonData['length']; i++) {
-        num = String(i);
-        num =  document.createElement("option");
-        title[i] = document.querySelector(`.countires`)
-    }
-    for (let i = 0; i < getJsonData['length']; i++) {
-        title[i].innerHTML = `<option>${getJsonData[i]["mClass"]}</option>`;
-        title[i].add(num, null);
+    let getJsonData = json["dataSearch"]["content"] //배열 가져오기 
+    let titlem = document.querySelector(`.countires`) //selector 태그 클래스 가져오기
+
+    //selector 안에 optiom 태그 추가
+    for (let i = 0; i < getJsonData['length']; i++) { // json파일 배열 길이만큼 반복
+        let num =  document.createElement("option"); //createElement가 option 태그를 만듦
+        num.textContent = `${getJsonData[i]["mClass"]}`; //생성된 option태그의 학과 api 글자를 추가함 
+        titlem.appendChild(num); //selector태그의 자식 요소로 num배열이 들어감 <selector> <option></option></selector>
     }
 
 
