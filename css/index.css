@@ -66,7 +66,6 @@ select::-ms-expand{
     padding-left: 110px;
     padding-right: 110px;
     justify-content: space-between;
-    /* background-color: aquamarine; */
 }
 .post-group {
     border-radius: 4px;
@@ -112,7 +111,6 @@ select::-ms-expand{
         padding-left: 1rem;
     }
     .post-container {
-        /* background-color: aqua; */
         flex-wrap: wrap;
         row-gap: 90px;
         padding-left: 170px;
@@ -124,8 +122,6 @@ select::-ms-expand{
     .filter-container {
         margin-left: 2rem;
         margin-right: 2rem;
-        /* justify-content: space-around; */
-
     }
     .filter-group-name {
         font-size: medium;
@@ -147,7 +143,6 @@ select::-ms-expand{
     }
     .detail-btn {
         left: 8rem;
-        /* margin-right: 2rem; */
     }
 }
 
@@ -183,8 +178,6 @@ select::-ms-expand{
     }
     .post-container {
         padding-top: 80px;
-    }
-    .post-detail {
     }
     .detail-btn {
         display: none;
