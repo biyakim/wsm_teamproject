@@ -1,0 +1,47 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+table {
+    border-collapse: collapse;
+    width: 1300px;
+}
+
+table tr th, td {
+    border-bottom: 0.1px solid rgb(187, 187, 187);
+    padding: 12px;
+}
+tr th, td {
+    font-weight: lighter;
+}
+.first-row {
+    background-color: rgb(237, 237, 237);
+}
+th:nth-child(2){
+    padding-right: 16rem;
+}
+
+a {
+    color: black;
+}
+
+/* 태블릿 */
+@media screen and (max-width:834px) {
+    table {
+        width: 800px;
+    }
+}
+/* 모바일 */
+@media screen and (max-width:500px) {
+    table {
+        width: 500px;
+    }
+    th {
+        font-size: smaller;
+    }
+    th:nth-child(2){
+        padding-right: 0;
+    }
+    
+}
