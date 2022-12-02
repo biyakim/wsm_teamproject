@@ -156,6 +156,7 @@ select::-ms-expand{
         height: auto;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        z-index: 1;
     }
     .filter-group {
         column-gap: 2rem;

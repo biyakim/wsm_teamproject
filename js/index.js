@@ -1,10 +1,3 @@
-// const barbtn = document.querySelector('.bar');
-// const menu = document.querySelector('.navbar_menu');
-
-// barbtn.addEventListener('click',()=>{
-//     menu.classList.toggle('avtive');
-// });
-
 //id로 html 요소 가져오기
 // let option = document.getElementById('option');
 let select = document.getElementById('select');
