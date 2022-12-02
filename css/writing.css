@@ -67,6 +67,8 @@ a{
    .text{
         padding-right: 100px;
    }
-
+   .love_log {
+    display: none;
+   }
 }
    

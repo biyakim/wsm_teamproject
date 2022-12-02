@@ -102,6 +102,8 @@ input:focus {outline: none;}
    .text{
         padding-right: 100px;
    }
-
+   .love_log {
+        display: none;
+   }
 }
    
