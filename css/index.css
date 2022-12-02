@@ -26,7 +26,7 @@
 
 /*select 태그 커스텀*/
 .select-box {
-    background:url('/img/down-arrow.png') no-repeat 97% 50%/15px auto;
+    background:url('../img/down-arrow.png') no-repeat 97% 50%/15px auto;
 }
 select { 
     padding-left: 14px;
