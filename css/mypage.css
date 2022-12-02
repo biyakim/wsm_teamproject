@@ -7,7 +7,7 @@ a{
      color: white;
 }
 .navbar{
-     /* height: 44px; */
+     height: 69px;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -35,33 +35,45 @@ a{
      margin-top: 60px;
 }
 b{
-     margin-left: 50px;
+     /* margin-left: 50px; */
+     text-align: center;
 }
 .pen{
      width: 50px;
      height: 50px;
      margin-left: 100px;
 }
-.writing1{
-     display: inline-block;
-     color: black;
-     width: 300px;
-     border-radius: 1rem;
-     padding-left: 10px;
-     margin-left: 150px;
-     margin-top: 20px;
-     background-color: aliceblue;
+footer {
+     display: flex;
+     justify-content: center;
 }
-.writing2{
-     margin-top: 30px;
-     display: inline-block;
+.my_post {
+     display: flex;
+     align-items: center;
+     margin-left: 320px;
+     column-gap: 1rem;
+     width: 600px;
+     text-align: center;
+}
+#add-btn {
+     text-align: center;
+     border-radius: 15px;
+     width: 48px;
+     height: 36px;
+     margin-left: 10px;
+}
+.writing-container {
+     display: flex;
+     justify-content: center;
+     column-gap: 2rem;
+}
+.writing1, .writing2{
      color: black;
      width: 300px;
      border-radius: 1rem;
-     padding-left: 10px;
-     margin-left: 150px;
+     padding: 1rem;
+     margin-top: 30px;
      background-color: aliceblue;
-     margin-bottom: 100px;
 }
 .bar{
      color: white;
@@ -74,6 +86,15 @@ b{
 }
 .bar {
      display: none;
+}
+
+@media screen and (max-width: 1600px){
+     .pen {
+          margin-left: 110px;
+     }
+     .my_post {
+          margin-left: 50px;
+     }
 }
 @media screen and (max-width: 768px) {
     .navbar{
@@ -98,6 +119,9 @@ b{
     }
     .navbar_menu.avtive{
          display: flex;
+         position: relative;
+         right: 40px;
+         width: 500px;
     }
     .text{
          padding-right: 100px;

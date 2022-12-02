@@ -68,9 +68,20 @@ main {
     height: 90px;
 }
 footer {
-    position: absolute;  
-    bottom: 0;
-    left: 0;
+    margin-top: 180px;
+    align-items: flex-end;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+footer>button {
+    border-radius: 12px;
+    text-decoration: underline;
+    border: 0.1px solid gray;
+    background-color:rgb(46, 46, 46);
+    color:snow;
+    width: 170px;
+    height: 64px;
 }
 .chat-container {
     margin-left: 240px;
