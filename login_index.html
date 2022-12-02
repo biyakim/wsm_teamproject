@@ -4,35 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\login_index.css">
-    <title>홈</title>
-    <script src="js\login_index.js" defer></script>
+    <title>HOME</title>
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mypage.css">
 </head>
 <body>
+    <!-- <header>
+        <nav class="nav container">
+            <div class="nav-loggo" id="nav-loggo">
+                <a href="index.html">
+                    <img src="./img/icon.png" alt="">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-list">홈</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./chat_page/index.html" class="nav-list">채팅방</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mypage.html" class="nav-list">마이페이지</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header> -->
     <nav class="navbar">
         <div class="navbar_logo">
-         <img class="bar" src="img\bar.png">
+         <!-- <img class="bar" src="img\bar.png"> -->
+         <i class='bx bx-menu  bx-md bar'></i>
           <img class="love_log" src="img\icon.png">
         </div>
  
         <ul class="navbar_menu">
              <li><a href="login_index.html">홈</a></li>
-             <li><a href="mypage.html">마이페이지</a></li>
+             <li><a href="./chat_page/index.html">채팅방</a></li>
+             <li><a href="mypage.html">마이 페이지</a></li>
              <li><a href="index.html">로그아웃</a></li>
         </ul>
         
-   </nav>
-   <main>
-    <div class="search-container">
-        <div class="university">
-            <div class="">대학교</div>
-            <div class="select-holder">
-                <select name="" id="">
-                    <option value=""></option>
-                </select>
+        
+    </nav>
+    <main>
+        <div class="filter-container">
+            <div class="filter-group">
+                <div class="filter-group-name">대학교</div>
+                <div class="select-box">
+                    <select name="" id="univ-select">
+                        <option value="">==대학교 선택==</option>
+                        <option value="">전체선택</option>
+                    </select>
+                </div>
             </div>
+            <div class="filter-group">
+                <div class="filter-group-name">학과</div>
+                <div class="select-box">
+                    <select name="" id="select">
+                        <option value="">==학과 선택==</option>
+                        <option value="">전체선택</option>
+                    </select>
+                </div>
+            </div>
+            <span class="search-btn">
+                <i class='bx bx-search-alt bx-lg'></i>
+            </span>
         </div>
-    </div>
-</main>
+        <span class="under-btn">
+            <button class="search-btn-2">검색</button>
+        </span>
+
+        <div class="post-container">
+            <div class="post-group" onclick="location.href='./detailed/index.html'">
+                <div class="post-detail">
+                    <div class="detail-item">
+                        서울대학교
+                    </div>
+                    <div class="detail-item">
+                        경영학과
+                    </div>
+                    <div class="detail-item">
+                        여자
+                    </div>
+                    <div class="detail-item">
+                        3명
+                    </div>
+                </div>
+                <span class="detail-btn" onclick="location.href='./detailed/index.html'">
+                    <i class='bx bx-log-in-circle bx-burst-hover bx-md'></i>
+                </span>
+            </div>
+            <div class="post-group" onclick="location.href='./detailed/index.html'">
+                <div class="post-detail">
+                    <div class="detail-item">
+                        서울대학교
+                    </div>
+                    <div class="detail-item">
+                        경영학과
+                    </div>
+                    <div class="detail-item">
+                        여자
+                    </div>
+                    <div class="detail-item">
+                        3명
+                    </div>
+                </div>
+                <span class="detail-btn">
+                    <i class='bx bx-log-in-circle bx-burst-hover bx-md'></i>
+                </span>
+            </div>
+            <div class="post-group" onclick="location.href='./detailed/index.html'">
+                <div class="post-detail">
+                    <div class="detail-item">
+                        서울대학교
+                    </div>
+                    <div class="detail-item">
+                        경영학과
+                    </div>
+                    <div class="detail-item">
+                        여자
+                    </div>
+                    <div class="detail-item">
+                        3명
+                    </div>
+                </div>
+                <span class="detail-btn">
+                    <i class='bx bx-log-in-circle bx-burst-hover bx-md'></i>
+                </span>
+            </div>
+            <div class="post-group" onclick="location.href='./detailed/index.html'">
+                <div class="post-detail">
+                    <div class="detail-item">
+                        서울대학교
+                    </div>
+                    <div class="detail-item">
+                        경영학과
+                    </div>
+                    <div class="detail-item">
+                        여자
+                    </div>
+                    <div class="detail-item">
+                        3명
+                    </div>
+                </div>
+                <span class="detail-btn">
+                    <i class='bx bx-log-in-circle bx-burst-hover bx-md'></i>
+                </span>
+            </div>
+            
+        </div>
+    </main>
 </body>
+<script src="./js/index.js"></script>
+<script src="./js/mainpage.js"></script>
 </html>
