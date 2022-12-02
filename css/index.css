@@ -144,6 +144,9 @@ select::-ms-expand{
     .detail-btn {
         left: 8rem;
     }
+    select {
+        width: 190px;
+    }
 }
 
 /* 모바일 */
