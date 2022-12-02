@@ -15,5 +15,5 @@
 
 ---
 ### 실행 방법
-    +[Github Page]()
+    +[Github Page](https://biyakim.github.io/wsm_teamproject/)
     +[Github Repository]()>소스코트 다운로드>index.html>Go Live
